@@ -29,7 +29,7 @@ const Beneficiario = () => {
     <MenuProvider>
       <React.Fragment>
         <Head>
-          <title>Beneficiario - Bem-vindo</title>
+          <title>Beneficiario - Bem-vindo.</title>
           <meta
             name="description"
             content="Página inicial de beneficiario, como podemos te ajudar hoje?"
