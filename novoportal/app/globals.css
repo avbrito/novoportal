@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #ededed;
+  }
+}
+
+@font-face {
+  font-family: 'UnimedSans2020'; 
+  src: url('../public//assets/fonts/UnimedSans2020-Rg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'UnimedSansBd2020'; 
+  src: url('../public//assets/fonts/UnimedSans2020-Bd.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'UnimedSans2020', Arial, Helvetica, sans-serif;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px; 
+  height: 8px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #D0D5DD; 
+  border-radius: 10px; 
+
+}
+
+::-webkit-scrollbar-track {
+  background-color: #F2F4F7; 
+  border-radius: 10px; 
+  margin-top: 5px;
+}
+
+.laranja {
+  border: 2px solid #F47920;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F47920 !important;
+  color: #fff;
+}
+
+.verde {
+  border: 2px solid #B2D14B;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #B2D14B !important;
+  color: #fff;
+}
+
+.verdescuro {
+  border: 2px solid #00995C;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00995C !important;
+  font-weight: bold !important;
+  color: #fff;
+}
+
+.react-calendar {
+  width: 350px;
+  max-width: 100%;
+  background: #fcfcfd !important;
+  border: 1px solid #F2F4F7 !important;
+  font-family: 'UnimedSansRg2020', Arial, Helvetica, sans-serif !important;
+  line-height: 1.125em;
+  padding:32px;
+}
+
+.react-calendar__navigation__label {
+  font-family: 'UnimedSansRg2020', Arial, Helvetica, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400px !important;
+  text-transform: capitalize !important;
+}
+
+.react-calendar__tile {
+  height: 100%;
+}
+
+
+.event-tile .react-calendar__tile {
+  height: 100%; 
+}
+
+.react-calendar__tile--now {
+  background-color: transparent !important;
+  color: #00995C !important;
+  font-weight: bold !important;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #98A2B3 !important;
+  font-family: 'UnimedSansRg2020', Arial, Helvetica, sans-serif !important;
+}
+
+.react-calendar__month-view__days {
+  color: #000000 !important;
+  font-family: 'UnimedSansRg2020', Arial, Helvetica, sans-serif !important;
+}
+
+.react-calendar__month-view__weekdays {
+  text-decoration: none !important;
+  font-family: 'UnimedSansRg2020', Arial, Helvetica, sans-serif !important;
+}
+
+.no-drag {
+  -webkit-user-drag: none;
+}
